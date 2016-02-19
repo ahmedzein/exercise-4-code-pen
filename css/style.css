@@ -226,19 +226,19 @@ html, body, .page {
 }
 
 #p1 {
-  background: darkslateblue;
+  background: #505050;
 }
 
 #p2 {
-  background: tomato;
+  background: #900000;
 }
 
 #p3 {
-  background: gold;
+  background: #ffcc00;
 }
 
 #p4 {
-  background: deeppink;
+  background: #6600cc;
 }
 
 #t2:target #p2,
@@ -255,7 +255,7 @@ html, body, .page {
 #t2:target #p1,
 #t3:target #p1,
 #t4:target #p1 {
-  background: black;
+  background: #000;
 }
 
 #t2:target #p1 .icon,
@@ -266,7 +266,7 @@ html, body, .page {
 
 .icon {
   color: #fff;
-  font-size: 32px;
+  font-size: 35px;
   display: block;
 }
 
@@ -329,7 +329,7 @@ a {
 }
 
 .title {
-  font-size: 38px;
+  font-size: 40px;
 }
 
 .hint {
@@ -338,22 +338,6 @@ a {
 
 #p4 .hint {
   display: inherit !important;
-}
-
-.hint a {
-  color: yellow;
-  transition: all 250ms ease-out;
-  -webkit-transition: all 250ms ease-out;
-  -moz-transition: all 250ms ease-out;
-  -o-transition: all 250ms ease-out;
-}
-
-.hint a:hover {
-  color: #FFF;
-}
-
-.line-trough {
-  text-decoration: line-through;
 }
 
 .page .icon {
@@ -368,11 +352,11 @@ a {
   text-align: center;
   font-size: 80px;
   line-height: 1.3;
-  -ms-transform: translateX(360%);
-      transform: translateX(360%);
-  -webkit-transform: translateX(360%);
-  -moz-transform: translateX(360%);
-  -o-transform: translateX(360%);
+  -ms-transform: translateY(-360%);
+      transform: translateY(-360%);
+  -webkit-transform: translateY(-360%);
+  -moz-transform: translateY(-360%);
+  -o-transform: translateY(-360%);
   transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1.25);
   -webkit-transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1.25);
   -moz-transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1.25);
@@ -392,10 +376,10 @@ a {
 #t2:target .page#p2 .icon,
 #t3:target .page#p3 .icon,
 #t4:target .page#p4 .icon {
-  -ms-transform: translateX(0) !important;
-      transform: translateX(0) !important;
-  -webkit-transform: translateX(0) !important;
-  -moz-transform: translateX(0) !important;
-  -o-transform: translateX(0) !important;
+  -ms-transform: translateY(0) !important;
+      transform: translateY(0) !important;
+  -webkit-transform: translateY(0) !important;
+  -moz-transform: translateY(0) !important;
+  -o-transform: translateY(0) !important;
   transition-delay: 1s;
 }
